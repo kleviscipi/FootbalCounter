@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:textAlignment="center"
+                android:text="Team A"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/team_goal_a"
+                android:textAlignment="center"
+                android:text="0"
+                android:textSize="56sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/team_faul_a"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_marginBottom="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/colorRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:clickable="true"
+                android:onClick="eventSetGoalTeamA"
+                android:text="Goal +1"
+                android:layout_marginBottom="16dp"
+                android:background="@color/colorGreen"
+                android:textColor="@color/colorWhite"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="eventSetFaulTeamA"
+                android:layout_marginBottom="16dp"
+                android:text="Faul +1"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:text="Cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/red_carton_team_a"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorRed"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/yellow_carton_team_a"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:onClick="eventSetRedCardTeamA"
+                    android:text="Red"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="10sp"
+                    android:background="@color/colorRed"
+                    android:textColor="@color/colorWhite"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="eventSetYellowCardTeamA"
+                    android:text="Yellow"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10sp"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorYellow"
+                    android:layout_weight="1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+        <View
+            android:background="@color/colorLightDark"
+            android:layout_width="2dp"
+            android:layout_height="match_parent" />
+        <LinearLayout
+            android:gravity="center_horizontal"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:textAlignment="center"
+                android:text="Team B"
+                android:textSize="22sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/team_goal_b"
+                android:textAlignment="center"
+                android:text="0"
+                android:textSize="56sp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <TextView
+                android:id="@+id/team_faul_b"
+                android:textAlignment="center"
+                android:text="0"
+                android:layout_marginBottom="8dp"
+                android:textSize="25sp"
+                android:textColor="@color/colorRed"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:clickable="true"
+                android:onClick="eventSetGoalTeamB"
+                android:text="Goal +1"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorGreen"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:onClick="eventSetFaulTeamB"
+                android:layout_marginBottom="16dp"
+                android:text="Faul +1"
+                android:textColor="@color/colorWhite"
+                android:background="@color/colorAccent"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+
+            <View
+                android:background="@color/colorPrimaryDark"
+                android:layout_width="match_parent"
+                android:layout_height="1dp"/>
+
+            <TextView
+                android:layout_marginTop="16dp"
+                android:textAlignment="center"
+                android:text="Cards"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+            <LinearLayout
+                android:layout_marginTop="8dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:id="@+id/red_carton_team_b"
+                    android:text="0"
+                    android:textSize="20sp"
+                    android:textColor="@color/colorRed"
+                    android:layout_weight="1"
+                    android:textAlignment="center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+                <TextView
+                    android:id="@+id/yellow_carton_team_b"
+                    android:textColor="@color/colorYellow"
+                    android:textSize="20sp"
+                    android:textAlignment="center"
+                    android:layout_weight="1"
+                    android:text="0"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_marginTop="16dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_horizontal"
+                android:orientation="horizontal">
+
+                <Button
+                    android:onClick="eventSetRedCardTeamB"
+                    android:text="Red"
+                    android:layout_marginLeft="10dp"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorRed"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <Button
+                    android:onClick="eventSetYellowCardTeamB"
+                    android:text="Yellow"
+                    android:layout_marginRight="10dp"
+                    android:textSize="10sp"
+                    android:layout_weight="1"
+                    android:textColor="@color/colorWhite"
+                    android:background="@color/colorYellow"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <Button
+        android:onClick="eventResetAll"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="RESET"
+        android:textColor="@color/colorWhite"
+        android:background="@color/colorRed"
+        android:layout_marginBottom="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+</RelativeLayout>
