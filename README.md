@@ -1,7 +1,7 @@
 # FootballCounter
 ## Android Test App
 
-![FootbalCounter](https://drive.google.com/file/d/119vh_Sa95D4Su5X76_R3L6xYy4YELgRi/view?usp=sharing)
+![FootbalCounter](https://lh3.googleusercontent.com/qhI_aT4Al9UNKluD9ezidakccsOMEtA6JylRZPOPnDrqGggdUAXxYdMjNnirUhzddGcKO2s2SpSIXR-aQNau=w1920-h1079-rw)
 
 
 
